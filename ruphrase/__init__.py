@@ -1,12 +1,8 @@
 """Build the correct turn of phrase in Russian"""
 
 __all__ = [
-    'accel_steps',
-    'build_phrase',
-    'read_urls_contents',
-    'tune_steps',
-    'view_types',
+    'ruphrase',
 ]
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 from ngutils.functions import *
