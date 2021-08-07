@@ -59,7 +59,10 @@ def ruphrase(prefix_forms, number, noun_forms='', grouping_symbol='`'):
     elif len(noun) == 2:
         noun = [' '+noun[0], ' '+noun[0]+noun[1], ' '+noun[0]+noun[1]]
     elif len(noun) == 3:
-        noun = [' '+noun[0], ' '+noun[0]+noun[1], ' '+noun[0]+noun[2]]
+        if noun[0]!='':
+            noun = [' '+noun[0], ' '+noun[0]+noun[1], ' '+noun[0]+noun[2]]
+        else:
+            noun = [' '+noun[1], ' '+noun[2], ' '+noun[2]]
     else:
         noun = [' '+noun[0]+noun[1], ' '+noun[0]+noun[2], ' '+noun[0]+noun[3]]
 
